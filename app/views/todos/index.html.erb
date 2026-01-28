@@ -1,0 +1,9 @@
+<h1>Todos#index</h1>
+<p>Find me in app/views/todos/index.html.erb</p>
+<p>Name : <%= @todos %></p>
+<p>Todos List:</p>
+<ul>
+  <% @todos.each do |todo| %>
+    <li><%= todo.title %> - <%= todo.is_completed ? 'Completed' : 'Pending' %></li>
+  <% end %>
+</ul>
