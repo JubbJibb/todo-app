@@ -1,5 +1,6 @@
 
 Rails.application.routes.draw do  
+  get "up" => "rails/health#show", as: :rails_health_check
 #  resources :todos 
   get 'todos/index',  to: 'todos#index'
   get 'todos/new', to: 'todos#new', as: 'new_todo'
